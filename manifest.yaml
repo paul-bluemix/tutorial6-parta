@@ -1,0 +1,11 @@
+applications:
+- memory: 512M
+  domain: au-syd.mybluemix.net
+  path: .
+  buildpack: https://github.com/pablowhite/bluemix-buildpack-meteor
+  host: PUT A NAME HERE
+  name: PUT SAME NAME HERE
+  disk: 512M
+  env:
+    MONGO_URL: mongodb://yuourmongodburl
+  instances: 1

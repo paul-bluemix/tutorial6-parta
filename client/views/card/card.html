@@ -1,0 +1,26 @@
+<template name="card">
+    <div class="row">
+        <div class="col s12 m6 offset-m3 offset-l3">
+            <div class="card   ">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img src="{{payload}}">
+                </div>
+                <div class="card-content blue darken-1">
+                    <span class="card-title activator white-text text-darken-2">Title<i class="material-icons right">more_vert</i></span>
+                    <p><a  href="{{payload}}">Link</a></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-2">Title<i class="material-icons right">close</i></span>
+                    <p>
+                    {{#each this.labels}}
+                        <div class="chip" style="margin: 10px">
+                            {{this.label_name}}
+                            {{this.label_score}}
+                            </div>
+                    {{/each}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
